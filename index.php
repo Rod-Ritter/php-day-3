@@ -77,8 +77,24 @@ include './includes/functions.php';
 
     echo $resultat;
 
+    $planetes = ['mars', 'terre', 'pluton', 'venus', ];
+    asort($planetes);
+    asort($age);
 
-    // debug($age);
+    debug($planetes);
+    debug($age);
+
+    $tab = [
+        'voiture' => 'ford',
+        'nombre' => [1,2,3,4],
+        'planete' => ['mars', 'terre'],
+    ];
+
+    // debug('ceci est'.$tab('nombre'));
+
+
+
+
 
 
 
