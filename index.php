@@ -17,7 +17,7 @@ include './includes/functions.php';
     debug($tableau);
     debug($tableau[2]);
 
-    echo count($tableau);
+    
 
     $notes = [12,5,16,7];
 
