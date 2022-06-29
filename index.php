@@ -17,6 +17,17 @@ include './includes/functions.php';
     debug($tableau);
     debug($tableau[2]);
 
+    echo count($tableau);
+
+    $notes = [12,5,16,7];
+
+    // afficher la moyenne des notes 
+    $nbElementNotes = count($notes);
+    $sommeNotes = $notes[0] + $notes[1] + $notes[2] + $notes[3];
+    $moyenneNotes = $sommeNotes/$nbElementNotes;
+
+    echo $moyenneNotes;
+
 
     ?>
     
