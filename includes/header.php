@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>php day 3</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 <body>
-    <header><h1>test</h1></header>
+    <header><h1>Les jolis petits tableaux</h1></header>

@@ -7,7 +7,6 @@ function debug ($data) {
 
 }
 
-// function avg (int|float $note){
-//     for (i=0;)
-
-// } 
+// function moy () {
+//     for 
+// }
