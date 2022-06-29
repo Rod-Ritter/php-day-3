@@ -28,6 +28,14 @@ include './includes/functions.php';
 
     echo $moyenneNotes;
 
+    $tab2 = array_merge($tableau, $notes);
+
+    debug($tab2);
+
+    for (i=0; i <count($notes) ; i++){
+        echo $notes [i];
+    }
+
 
     ?>
     
