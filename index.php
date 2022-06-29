@@ -9,10 +9,13 @@ include './includes/functions.php';
     <?php
     $tableau = array ();
     $tableau = [];
-    $tableau = [true, 45, 'kiwi',[24,56,83]];
+    $tableau = [true, 45, 'terre',[24,56,83]];
 
+    $tableau [] = 'juin';
+    array_push($tableau, 'voiture', 'canard');
+    
     debug($tableau);
-
+    debug($tableau[2]);
 
 
     ?>
