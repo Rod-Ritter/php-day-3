@@ -38,12 +38,54 @@ include './includes/functions.php';
 
     $sommeNotes = 0;
 
-    for($i=0; $i <count($notes) ; $i++){
-        $sommeNotes = $sommeNotes + $notes[$i];
-        $moyNote = $sommeNotes / count($notes);
+    // for($i=0; $i <count($notes) ; $i++){
+    //     $sommeNotes = $sommeNotes + $notes[$i];
+    //     $moyNote = $sommeNotes / count($notes);
 
-        echo $moyNote;
-    }
+    //     echo $moyNote;
+    // }
+
+    // foreach ($notes as $note){
+    //     echo $notes;
+    // }
+    
+    $fruits = ['banane' => "jaune", 'pomme' => 'rouge', 'kiwi' => 'vert'];
+    debug($fruits);
+    echo 'la couleur de la pomme est :' .$fruits['pomme'], '<br>';
+
+    $age = ['amir' => 42, 'sara' => 34, 'leïla' => 42];
+
+    $chaine= implode('-',$age);
+    echo $chaine;
+
+    // $age2 explode ('-')
+
+    $age ['paul'] = 33;
+    $age ['amir'] = 31;
+
+    // foreach ($age as $key => $value){
+    //     echo $key .' a ' . $value . ' ans ', '<br>';
+    // }
+
+    $resultat = "<ul>";
+
+    foreach ($age as $key => $value){
+        $resultat .= "<li>$key a $value ans <br></li>";
+      
+    }    
+    $resultat .= "</ul>";
+
+    echo $resultat;
+
+
+    // debug($age);
+
+
+
+
+
+    
+
   
 
 
