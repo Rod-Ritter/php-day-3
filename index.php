@@ -32,8 +32,8 @@ include './includes/functions.php';
 
     debug($tab2);
 
-    for (i=0; i <count($notes) ; i++){
-        echo $notes [i];
+    for ($i=0; $i <count($notes) ; $i++){
+        echo $notes [$i];
     }
 
 
