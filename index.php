@@ -118,7 +118,7 @@ include './includes/functions.php';
     ?>
 
     <li>
-    <?=$produit.['nom'] ?> : <?=$produit.['prix'] ; ?>
+    <?=$produit ['nom'] ?> : <?=$produit ['prix'] ; ?>
     
     </li> 
     <?php } ?>
