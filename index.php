@@ -22,19 +22,61 @@ include './includes/functions.php';
     $notes = [12,5,16,7];
 
     // afficher la moyenne des notes 
-    $nbElementNotes = count($notes);
-    $sommeNotes = $notes[0] + $notes[1] + $notes[2] + $notes[3];
-    $moyenneNotes = $sommeNotes/$nbElementNotes;
+    // $nbElementNotes = count($notes);
+    // $sommeNotes = $notes[0] + $notes[1] + $notes[2] + $notes[3];
+    // $moyenneNotes = $sommeNotes/$nbElementNotes;
 
-    echo $moyenneNotes;
+    // echo $moyenneNotes;
 
-    $tab2 = array_merge($tableau, $notes);
+    // $tab2 = array_merge($tableau, $notes);
 
-    debug($tab2);
+    // debug($tab2);
 
     for ($i=0; $i <count($notes) ; $i++){
         echo $notes [$i];
     }
+
+    
+
+
+    $resultat = "<ul>";
+
+    for ($i = 0 ; $i < count($tabNb) ; $i++) {
+        $resultat .= "<li>";
+        if (fmod($tabNb[$i]))
+            $resultat .= "pair";
+        else
+            $resultat .= "impair";
+        $resultat .= "</li>";
+    }    
+    $resultat .= "</ul>";
+
+    echo $resultat;
+
+    $resultat = "<ul>";
+
+    
+
+    
+
+    
+
+    
+
+
+
+
+
+
+
+
+
+
+
+    
+
+  
+
 
 
     ?>
