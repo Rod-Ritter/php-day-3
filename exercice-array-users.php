@@ -6,9 +6,19 @@ $users = [
     "lastname" => "Nooravi",
     "pseudo" => "",
     "age" => "41",
-    "food" => "41",
-    "sport" => "41"
+    "food" => "",
+    "sport" => ""
 
 ];
 
-debug($users);
+foreach($users as $key => $value){
+    if($value == ""){
+        echo "$key : Aucune information<br>";
+    } else{
+        echo "$key = $value<br>";
+    }
+}
+
+
+
+
