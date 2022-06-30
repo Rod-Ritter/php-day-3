@@ -94,7 +94,7 @@ include './includes/functions.php';
 
     $tab = [];
     $tab[] = ['a','b','c'];
-    $tab[] = ['s,','u','v'];
+    $tab[] = ['s','u','v'];
     $tab[] = ['o','u','e','i'];
 
     // ecrire le mot ESCCI
@@ -124,6 +124,44 @@ include './includes/functions.php';
     <?php } ?>
 
     </ul> 
+
+    <?php
+
+    $tabNb = [27,15,34,379,248,5643,81,211,999,142,300,572];
+
+    print_r($tabNb);
+
+
+
+
+    for ($i = 0 ; $i<count($tabNb); $i++ ){
+        echo $tabNb [$i] ,'<br>';
+    }
+
+    
+
+
+    $resultat = "<ul>";
+
+    for ($i = 0 ; $i < count($tabNb) ; $i++) {
+        $resultat .= "<li>";
+        if (fmod($tabNb[$i]))
+            $resultat .= "pair";
+        else
+            $resultat .= "impair";
+        $resultat .= "</li>";
+    }    
+    $resultat .= "</ul>";
+
+    echo $resultat;
+
+    $resultat = "<ul>";
+
+    
+
+    
+
+    
 
     
 
