@@ -84,13 +84,38 @@ include './includes/functions.php';
     debug($planetes);
     debug($age);
 
-    $tab = [
-        'voiture' => 'ford',
-        'nombre' => [1,2,3,4],
-        'planete' => ['mars', 'terre'],
-    ];
+    // $tab = [
+    //     'voiture' => 'ford',
+    //     'nombre' => [1,2,3,4],
+    //     'planete' => ['mars', 'terre'],
+    // ];
 
-    // debug('ceci est'.$tab('nombre'));
+    // debug($tab['nombre'][0]);
+
+    $tab = [];
+    $tab[] = ['a','b','c'];
+    $tab[] = ['s,','u','v'];
+    $tab[] = ['o','u','e','i'];
+
+    // ecrire le mot ESCCI
+
+    echo $tab[2][2].$tab[1][0].$tab[0][2].$tab[0][2].$tab[2][3];
+
+    $produits [
+        ['nom' => 'chaussette', 'prix' => 10];
+        ['nom' => 'vélo', 'prix' => 500];
+        ['nom' => 'carotte', 'prix' => 2];
+        ['nom' => 'boulon', 'prix' => 9]
+    ]
+
+    foreach ($produits as $key => $value){
+        $resultat .= "<li>$key  $value <br></li>";
+      
+    } 
+
+    
+
+
 
 
 
