@@ -102,14 +102,15 @@ include './includes/functions.php';
     echo $tab[2][2].$tab[1][0].$tab[0][2].$tab[0][2].$tab[2][3];
 
     $produits [
-        ['nom' => 'chaussette', 'prix' => 10];
-        ['nom' => 'vélo', 'prix' => 500];
-        ['nom' => 'carotte', 'prix' => 2];
+
+        ['nom' => 'chaussette', 'prix' => 10]
+        ['nom' => 'vélo', 'prix' => 500]
+        ['nom' => 'carotte', 'prix' => 2]
         ['nom' => 'boulon', 'prix' => 9]
     ]
 
-    foreach ($produits as $key => $value){
-        $resultat .= "<li>$key  $value <br></li>";
+    foreach ($produits as $produit){
+        $resultat .= "<li>$produit <br></li>";
       
     } 
 
