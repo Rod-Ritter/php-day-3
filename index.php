@@ -22,19 +22,123 @@ include './includes/functions.php';
     $notes = [12,5,16,7];
 
     // afficher la moyenne des notes 
-    $nbElementNotes = count($notes);
-    $sommeNotes = $notes[0] + $notes[1] + $notes[2] + $notes[3];
-    $moyenneNotes = $sommeNotes/$nbElementNotes;
+    // $nbElementNotes = count($notes);
+    // $sommeNotes = $notes[0] + $notes[1] + $notes[2] + $notes[3];
+    // $moyenneNotes = $sommeNotes/$nbElementNotes;
 
-    echo $moyenneNotes;
+    // echo $moyenneNotes;
 
-    $tab2 = array_merge($tableau, $notes);
+    // $tab2 = array_merge($tableau, $notes);
 
-    debug($tab2);
+    // debug($tab2);
 
-    for($i=0; $i <count($notes) ; $i++){
-        echo $notes [$i] ,'<br>';
-    }
+    // for($i=0; $i <count($notes) ; $i++){
+    //     echo $notes [$i] ,'<br>';
+    // }
+
+    $sommeNotes = 0;
+
+    // for($i=0; $i <count($notes) ; $i++){
+    //     $sommeNotes = $sommeNotes + $notes[$i];
+    //     $moyNote = $sommeNotes / count($notes);
+
+    //     echo $moyNote;
+    // }
+
+    // foreach ($notes as $note){
+    //     echo $notes;
+    // }
+    
+    $fruits = ['banane' => "jaune", 'pomme' => 'rouge', 'kiwi' => 'vert'];
+    debug($fruits);
+    echo 'la couleur de la pomme est :' .$fruits['pomme'], '<br>';
+
+    $age = ['amir' => 42, 'sara' => 34, 'leïla' => 42];
+
+    $chaine= implode('-',$age);
+    echo $chaine;
+
+    // $age2 explode ('-')
+
+    $age ['paul'] = 33;
+    $age ['amir'] = 31;
+
+    // foreach ($age as $key => $value){
+    //     echo $key .' a ' . $value . ' ans ', '<br>';
+    // }
+
+    $resultat = "<ul>";
+
+    foreach ($age as $key => $value){
+        $resultat .= "<li>$key a $value ans <br></li>";
+      
+    }    
+    $resultat .= "</ul>";
+
+    echo $resultat;
+
+    $planetes = ['mars', 'terre', 'pluton', 'venus', ];
+    asort($planetes);
+    asort($age);
+
+    debug($planetes);
+    debug($age);
+
+    // $tab = [
+    //     'voiture' => 'ford',
+    //     'nombre' => [1,2,3,4],
+    //     'planete' => ['mars', 'terre'],
+    // ];
+
+    // debug($tab['nombre'][0]);
+
+    $tab = [];
+    $tab[] = ['a','b','c'];
+    $tab[] = ['s,','u','v'];
+    $tab[] = ['o','u','e','i'];
+
+    // ecrire le mot ESCCI
+
+    echo $tab[2][2].$tab[1][0].$tab[0][2].$tab[0][2].$tab[2][3];
+
+    $produits = [
+
+        ['nom' => 'chaussette', 'prix' => 10],
+        ['nom' => 'vélo', 'prix' => 500],
+        ['nom' => 'carotte', 'prix' => 2],
+        ['nom' => 'boulon', 'prix' => 9]
+    ];
+
+   
+    ?>
+
+    <ul>
+
+    <?php foreach ($produits as $produit) {
+    ?>
+
+    <li>
+    <?=$produit ['nom'] ?> : <?=$produit ['prix'] ; ?>
+    
+    </li> 
+    <?php } ?>
+
+    </ul> 
+
+    
+
+
+
+
+
+
+
+
+
+
+
+    
+
   
 
 

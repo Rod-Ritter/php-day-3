@@ -8,4 +8,8 @@
     <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 <body>
-    <header><h1>Les jolis petits tableaux</h1></header>
+    <header>
+        <div class="mainTitle">
+        <h1>Les jolis petits tableaux</h1>
+        </div>
+    </header>
