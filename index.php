@@ -39,22 +39,39 @@ include './includes/functions.php';
     
 
 
-    $resultat = "<ul>";
+    // $resultat = "<ul>";
 
-    for ($i = 0 ; $i < count($tabNb) ; $i++) {
-        $resultat .= "<li>";
-        if (fmod($tabNb[$i]))
-            $resultat .= "pair";
-        else
-            $resultat .= "impair";
-        $resultat .= "</li>";
-    }    
-    $resultat .= "</ul>";
+    // for ($i = 0 ; $i < count($tabNb) ; $i++) {
+    //     $resultat .= "<li>";
+    //     if (fmod($tabNb[$i]))
+    //         $resultat .= "pair";
+    //     else
+    //         $resultat .= "impair";
+    //     $resultat .= "</li>";
+    // }    
+    // $resultat .= "</ul>";
 
-    echo $resultat;
+    // echo $resultat;
 
-    $resultat = "<ul>";
+    // $resultat = "<ul>";
 
+    $tab = [27, 15, 34, 379, 248, 5643, 81, 211, 999, 142, 300, 572];
+
+function pair($data) // fonction qui retourne les elements d'un tableau par nombre pair ou impaire sous forme de liste html.
+{
+    echo '<ul>';
+
+    foreach ($data as $data) {
+        if ($data % 2 === 0) {
+            echo '<li>' . $data . ' :  pair </li>';
+        } else {
+            echo '<li>' . $data . ' :  impair </li>';
+        }
+    }
+    echo '</ul>';
+}
+
+echo (pair($tab));
     
 
     
