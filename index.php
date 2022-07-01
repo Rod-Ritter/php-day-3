@@ -76,32 +76,7 @@ function pair($data) // fonction qui retourne les elements d'un tableau par nomb
 
 echo (pair($tab));
 
-
-    
-
-    
-
-    
-
-    
-
-
-
-
-
-
-
-
-
-
-
-    
-
-  
-
-
-
-    ?>
+?>
     
 </main>
 

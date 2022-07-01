@@ -46,8 +46,8 @@ $peoples_array_php = json_decode($json_peoples, true);
 
 debug($peoples_array_php);
 
-// echo $peoples_array_php[1]['image']; 
+echo $peoples_array_php[1]['image']; 
 
-echo '<img src="' .$peoples_array_php[1]['image'] . '"alt=Sara>';
+// echo '<img src="' .$peoples_array_php[1]['image'] . '"alt=Sara>';
 
 

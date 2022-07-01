@@ -2,4 +2,8 @@
 
 $users = file_get_contents("./data/users.json");
 
-debug($users);
+$json_peoples = json_encode($users);
+
+$profiles = json_decode($json_peoples, true);
+
+echo $profiles["results"];
