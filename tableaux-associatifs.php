@@ -34,19 +34,26 @@ $json_peoples = '[{
     },{
     "nom" : "Mousfi",
     "prenom" : "Sara",
-    "age" : 29
+    "age" : 29,
     "couleurs" : ["bleu", "blanc", "rouge"],
     "image" : "https://ximg.es/64x64/000/fff"
         
     }]';
 
-// debug($json_peoples);
+// // debug($json_peoples);
+
 
 $peoples_array_php = json_decode($json_peoples, true);
-
 debug($peoples_array_php);
 
-echo $peoples_array_php[1]['image']; 
+echo $peoples_array_php[0]['image'];
+echo '<br>';
+echo "Le nom de Sara est " . $peoples_array_php[1]['nom'];
+
+
+
+
+
 
 // echo '<img src="' .$peoples_array_php[1]['image'] . '"alt=Sara>';
 
