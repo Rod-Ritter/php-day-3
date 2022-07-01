@@ -6,4 +6,4 @@ $json_peoples = json_encode($users);
 
 $profiles = json_decode($json_peoples, true);
 
-echo $profiles["results"];
+// echo $profiles["results"];
