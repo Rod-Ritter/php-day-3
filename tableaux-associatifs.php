@@ -18,4 +18,4 @@ $peoples = [
 
     debug($peoples);
 
-    // echo "le nom de Sara est $peoples [1],['nom]";
+    echo "le nom de Sara est "  .$peoples [1]['nom'];
