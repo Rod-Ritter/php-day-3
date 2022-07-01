@@ -42,7 +42,9 @@ echo $nbmax;
 
 
 
-// debug($nombres[$i]);
+
+
+
 
 
 
