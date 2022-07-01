@@ -4,6 +4,7 @@ include './includes/header.php';
 include './includes/functions.php';
 include 'exercice-array-users.php';
 include './tableaux-associatifs.php';
+include './exercices-json.php';
 
 ?>
 
