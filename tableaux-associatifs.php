@@ -27,12 +27,16 @@ $peoples = [
 $json_peoples = '[{
     "nom" : "Nooravi",
     "prenom" : "Amir",
-    "age" : 41
+    "age" : 41,
+    "couleurs" : ["rouge", "vert", "blanc"],
+    "image" : "https://ximg.es/64x64/000/fff"
     
     },{
     "nom" : "Mousfi",
     "prenom" : "Sara",
-    "age" : 31
+    "age" : 29
+    "couleurs" : ["bleu", "blanc", "rouge"],
+    "image" : "https://ximg.es/64x64/000/fff"
         
     }]';
 
